@@ -21,7 +21,7 @@ AppDataSource.initialize().then(async () => {
     // console.log("Loaded users: ", users)
 
     // console.log("Here you can setup and run express / fastify / any other framework.")
-    
+
     // controllers.map((controller, index) => app[controller.method](controller.path, controller.callback));
 
     app.get('/', (req, res) => {
@@ -30,3 +30,5 @@ AppDataSource.initialize().then(async () => {
     app.use('/products')
     // app.listen(port, () => console.log(`server listening on port ${port}`))
 }).catch(error => console.log("DB-ERR", error))
+
+export default app;
